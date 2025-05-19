@@ -6,11 +6,11 @@ let keyInfoShow = false;
 
 document.body.addEventListener('keydown',(event) => {
     if(event.key === 'r'){
-        playGame('Rock');
+        playGame('rock');
     }else if(event.key === 'p'){
-        playGame('Paper');
+        playGame('paper');
     }else if(event.key === 's'){
-        playGame('Scissors');
+        playGame('scissors');
     }else if(event.key === 'a'){
         autoplay();
     }else if (event.key === 'Backspace'){
@@ -20,17 +20,17 @@ document.body.addEventListener('keydown',(event) => {
 
 document.querySelector('.js-rock-button')
 .addEventListener('click', function(){ 
-    playGame('Rock');
+    playGame('rock');
 });
 
 document.querySelector('.js-paper-button')
 .addEventListener('click', function(){ 
-    playGame('Paper');
+    playGame('paper');
 });
 
 document.querySelector('.js-scissors-button')
 .addEventListener('click', function(){ 
-    playGame('Scissors');
+    playGame('scissors');
 });
 
 document.querySelector('.reset-score-button')
@@ -87,11 +87,11 @@ function getMove(){
     randomMove = Math.random();
     compMove = '';
     if(randomMove >= 0 && randomMove < 1/3){
-        compMove = 'Rock';
+        compMove = 'rock';
     }else if(randomMove >= 1/3 && randomMove < 2/3){
-        compMove = 'Paper';
+        compMove = 'paper';
     }else{
-        compMove = 'Scissors';
+        compMove = 'scissors';
     }
 
     return compMove;
@@ -101,12 +101,12 @@ function playGame(move){
     compMove = getMove();
 
     let result = '';
-    if(move === 'Rock')
-        result = compare(compMove, 'Rock','Paper');
-    else if(move === 'Paper')
-        result = compare(compMove, 'Paper','Scissors');
+    if(move === 'rock')
+        result = compare(compMove, 'rock','paper');
+    else if(move === 'paper')
+        result = compare(compMove, 'paper','scissors');
     else
-        result = compare(compMove, 'Scissors','Rock');
+        result = compare(compMove, 'scissors','rock');
 
     localStorage.setItem('score',JSON.stringify(score));
     updateScore();
