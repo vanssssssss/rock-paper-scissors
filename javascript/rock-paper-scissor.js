@@ -113,7 +113,7 @@ function playGame(move){
     document.querySelector('.js-result')
         .innerHTML = result;
     document.querySelector('.move')
-        .innerHTML = `You :  <img src="rock-paper-img/${move}-emoji.png" class="move-icon">  <img src="rock-paper-img/${compMove}-emoji.png" class="move-icon"> : Computer .`;
+        .innerHTML = `You :  <img src="rock-paper-images/${move}-emoji.png" class="move-icon">  <img src="rock-paper-images/${compMove}-emoji.png" class="move-icon"> : Computer .`;
 }        
 
 
