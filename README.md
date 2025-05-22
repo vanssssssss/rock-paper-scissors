@@ -1,7 +1,6 @@
 ROCK PAPER SCISSORS !!
 * A simple Rock-Paper-scissor game that you can play against computer using either mouse clicks or keyboard keys!!
 * Built for fun and pratice!
-* 
 
 Link to game : https://vanssssssss.github.io/rock-paper-scissors/rock-paper-scissor.html
 
