@@ -9,11 +9,12 @@ body{
     align-items: center;
 }
 body.light-mode{
-    background-color: #f5f5f5;
-    color: #222;
+    background-color: wheat;
+    color: white;
 }
+
 .light-mode button{
-    background-color: #fff;
+    background-color: wheat;
     color: #000;
     border: 1px solid #000;
 }
