@@ -137,3 +137,14 @@ function updateScore(){
     document.querySelector('.scoree')
         .innerHTML = `Winss : ${score.wins}  Losses : ${score.losses}  Tie : ${score.tie}`;
 }
+
+const themeToggleBtn= document.getElementById('themeToggle');
+
+themeToggleBtn.addEventListener('click',() => {
+    if(document.body.classList.toggle('light-mode')) {
+        themeToggleBtn.textContent = 'Switch to Dark Mode';
+    }
+    else{
+        themeToggleBtn.textContent = 'Switch to Light Mode';
+    }
+});
